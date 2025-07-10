@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Bintu's Grace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #contact-form {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+    button.toggle-btn {
+      background-color: #5a2e83;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 20px auto;
+      display: block;
+      min-width: 180px;
+    }
+    button.toggle-btn:hover {
+      background-color: #a94dbb;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .phone-placeholder {
+      background-color: #f0e6f9;
+      border: 2px solid #8651c9;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 10px auto;
+      max-width: 250px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .phone-placeholder a {
+      color: #5a2e83;
+      text-decoration: none;
+    }
+    .phone-placeholder a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive container for iframe */
+    .iframe-container {
+      max-width: 640px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .iframe-container iframe {
+      width: 100%;
+      height: 1300px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    /* Smaller iframe on small screens */
+    @media (max-width: 600px) {
+      .iframe-container iframe {
+        height: 800px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bintu's Grace</h1>
+    <nav>
+      <button id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please fill out the form below or reach us directly via email or phone.</p>
+      
+      <button class="toggle-btn" id="toggleFormBtn">Show Contact Form</button>
+
+      <div id="contact-form" class="iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGQypJgVBoPRKx6DVJwOR4s-PuM0B80ZH-j_yl6VudO-wsPA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:bintusgrace1234@gmail.com">bintusgrace1234@gmail.com</a></p>
+        <div class="phone-placeholder">
+          Phone: <a href="tel:+23273694109">+232 73 694 109</a>
+        </div>
+        <div class="phone-placeholder">
+          Phone: <a href="tel:+232308588715">+232 30 858 8715</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bintu's Grace</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleFormBtn');
+    const formDiv = document.getElementById('contact-form');
+
+    toggleBtn.addEventListener('click', () => {
+      if (formDiv.style.display === 'block') {
+        formDiv.style.display = 'none';
+        toggleBtn.textContent = 'Show Contact Form';
+      } else {
+        formDiv.style.display = 'block';
+        toggleBtn.textContent = 'Hide Contact Form';
+      }
+    });
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    navToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

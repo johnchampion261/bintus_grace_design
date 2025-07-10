@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore our exquisite handcrafted cakes and elegant fascinators at Bintu's Grace." />
+  <title>Products - Bintu's Grace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+  <header>
+    <h1>Bintu's Grace</h1>
+    <nav>
+      <button id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+      <ul id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cake Form -->
+  <div id="cakeForm" class="form-popup" aria-modal="true" role="dialog" aria-labelledby="cakeFormTitle" tabindex="-1">
+    <div class="header">
+      <button class="close-btn" onclick="document.getElementById('cakeForm').style.display='none'" aria-label="Close cake order form">×</button>
+    </div>
+    <div class="iframe-container">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLScSWsmluS4WyQo-X5NDtXygoKC4C2ZwC2Pu6ZARdZtWN_AaAQ/viewform?embedded=true"
+        marginheight="0" marginwidth="0" 
+        title="Order Classic and other cakes form"
+      >
+        Loading…
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Fascinator Form -->
+  <div id="fascinatorForm" class="form-popup" aria-modal="true" role="dialog" aria-labelledby="fascinatorFormTitle" tabindex="-1">
+    <div class="header">
+      <button class="close-btn" onclick="document.getElementById('fascinatorForm').style.display='none'" aria-label="Close fascinator order form">×</button>
+    </div>
+    <div class="iframe-container">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeE9dDu9bbDsC-upiqcpQBQzOn1mIOE6av2xmzN8ob4tHyK2g/viewform?embedded=true"
+        marginheight="0" marginwidth="0"
+        title="Order Fascinators form"
+      >
+        Loading…
+      </iframe>
+    </div>
+  </div>
+
+  <main>
+    <section id="cakes">
+      <h2>Our Cakes</h2>
+      <p>Delicious handmade cakes for every occasion.</p>
+      <div class="product-grid">
+        <!-- 12 Cakes -->
+        <article class="product-card">
+          <img src="images/cake1.jpg" alt="Classic Vanilla Cake" />
+          <h3>Classic Vanilla</h3>
+          <p>Soft vanilla sponge & buttercream.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake2.jpg" alt="Chocolate Delight Cake" />
+          <h3>Chocolate Delight</h3>
+          <p>Rich chocolate cake & ganache.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake3.jpg" alt="Fruit Fantasy Cake" />
+          <h3>Fruit Fantasy</h3>
+          <p>Fruit sponge with fresh toppings.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake4.jpg" alt="Red Velvet Cake" />
+          <h3>Red Velvet</h3>
+          <p>Moist red velvet & cream cheese.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake5.jpg" alt="Lemon Zest Cake" />
+          <h3>Lemon Zest</h3>
+          <p>Lemon sponge with tangy filling.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake6.jpg" alt="Carrot Cake" />
+          <h3>Carrot Cake</h3>
+          <p>Nutty carrot cake & spice flavor.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake7.jpg" alt="Coffee Mocha Cake" />
+          <h3>Coffee Mocha</h3>
+          <p>Bold coffee & chocolate blend.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake8.jpg" alt="Strawberry Cream Cake" />
+          <h3>Strawberry Cream</h3>
+          <p>Strawberries & whipped cream.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake9.jpg" alt="Black Forest Cake" />
+          <h3>Black Forest</h3>
+          <p>Cherries, chocolate, whipped cream.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake10.jpg" alt="Pineapple Upside Cake" />
+          <h3>Pineapple Upside Cake</h3>
+          <p>Caramel pineapple dessert cake.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake11.jpg" alt="Oreo Crunch Cake" />
+          <h3>Oreo Crunch</h3>
+          <p>Chocolate cake with crushed Oreos.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/cake12.jpg" alt="Rainbow Slice Cake" />
+          <h3>Rainbow Slice</h3>
+          <p>Colorful sponge layers & vanilla.</p>
+          <button type="button" onclick="document.getElementById('cakeForm').style.display='flex'">Order Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="fascinators">
+      <h2>Elegant Fascinators</h2>
+      <p>Handmade headpieces to match your style.</p>
+      <div class="product-grid">
+        <!-- 12 Fascinators -->
+        <article class="product-card">
+          <img src="images/fascinator1.jpg" alt="Floral Fascinator" />
+          <h3>Floral Fascinator</h3>
+          <p>Silk flowers on headband.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator2.jpg" alt="Feather Fascinator" />
+          <h3>Feather Fascinator</h3>
+          <p>Feather & net style piece.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator3.jpg" alt="Vintage Pearl Fascinator" />
+          <h3>Vintage Pearl</h3>
+          <p>Lace with pearl highlights.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator4.jpg" alt="Rose Headpiece" />
+          <h3>Rose Headpiece</h3>
+          <p>Bold rose centerpiece.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator5.jpg" alt="Classic Black Fascinator" />
+          <h3>Classic Black</h3>
+          <p>Simple black with mesh.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator6.jpg" alt="Modern Net Fascinator" />
+          <h3>Modern Net</h3>
+          <p>Trendy modern twist.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator7.jpg" alt="Beaded Crown Fascinator" />
+          <h3>Beaded Crown</h3>
+          <p>Intricate beading & shine.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator8.jpg" alt="White Bridal Fascinator" />
+          <h3>White Bridal</h3>
+          <p>Perfect for weddings.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator9.jpg" alt="Mini Top Hat Fascinator" />
+          <h3>Mini Top Hat</h3>
+          <p>Fun, stylish mini hat style.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator10.jpg" alt="Gold Glitz Fascinator" />
+          <h3>Gold Glitz</h3>
+          <p>Gold shimmer for big events.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator11.jpg" alt="Ivory Loop Fascinator" />
+          <h3>Ivory Loop</h3>
+          <p>Elegant loops for weddings.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+        <article class="product-card">
+          <img src="images/fascinator12.jpg" alt="Crystal Blue Fascinator" />
+          <h3>Crystal Blue</h3>
+          <p>Light blue mesh with gems.</p>
+          <button type="button" onclick="document.getElementById('fascinatorForm').style.display='flex'">Order Now</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bintu's Grace</p>
+  </footer>
+
+  <script>
+    // Toggle mobile navigation menu
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('primary-navigation');
+
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      navMenu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn about Bintu's Grace — our history, mission, vision, team, and core values that guide our handcrafted cakes and fascinators." />
+  <title>About - Bintu's Grace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>Bintu's Grace</h1>
+    <nav>
+      <button id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Image -->
+    <img src="images/banner.jpg" alt="Banner of Bintu's Grace business" class="banner" />
+
+    <section id="history">
+      <h2>History of Bintu’s Grace</h2>
+      <p>Bintu's Grace was founded with a passion for blending creativity, faith, and craftsmanship into exquisite handcrafted cakes and elegant fascinators. Since our beginning, we have focused on making every celebration memorable by bringing artistry and heart to each product.</p>
+      <p>Our journey started as a small project inspired by family traditions and has blossomed into a beloved local brand recognized for quality, detail, and personalized service.</p>
+    </section>
+
+    <section id="mission-vision">
+      <h2>Mission & Vision</h2>
+      <h3>Mission</h3>
+      <p>Our mission is to deliver handcrafted cakes and fascinators made with love and faith, exceeding our clients’ expectations through exceptional quality and personalized service.</p>
+      <h3>Vision</h3>
+      <p>We envision Bintu's Grace as a leading brand synonymous with creativity, trust, and elegance in every event and celebration we touch.</p>
+    </section>
+
+    <section id="team">
+      <h2>Meet Our Team</h2>
+
+      <article class="founder">
+        <img src="images/bintu.jpg" alt="Photo of Bintu Martha" class="team-photo" />
+        <h3>Bintu Martha Kamara</h3>
+        <p>Bintu is the creative heart of our company, designing each cake and fascinator with unmatched passion and attention to detail. She is a trained and qualified professional in cake making and fascinator design, bringing expertise and artistry to every creation. Her faith and craftsmanship guide all her work.</p>
+      </article>
+
+      <article class="founder">
+        <img src="images/dwight.jpg" alt="Photo of John Dwight" class="team-photo" />
+        <h3>Engineer John Dwight Tholley</h3>
+        <p>John Dwight manages the business operations and client relationships, ensuring smooth delivery and customer satisfaction at every step. Engineer John is also the IT specialist to make sure all order reaches on time. He controls the form you submit when you order and makes sure the messages reach Bintu Martha the Baker that design the cake.</p>
+      </article>
+    </section>
+
+    <section id="values">
+      <h2>Our Core Values</h2>
+      <table class="core-values-table" aria-label="Core Values of Bintu's Grace">
+        <tbody>
+          <tr>
+            <td class="value-name">Quality</td>
+            <td>We prioritize high-quality ingredients and materials in every product.</td>
+          </tr>
+          <tr>
+            <td class="value-name">Creativity</td>
+            <td>Innovative and unique designs make every cake and fascinator special.</td>
+          </tr>
+          <tr>
+            <td class="value-name">Faith</td>
+            <td>Our work is guided by faith, ensuring dedication and integrity.</td>
+          </tr>
+          <tr>
+            <td class="value-name">Customer Focus</td>
+            <td>We listen carefully to understand and fulfill our clients' desires.</td>
+          </tr>
+          <tr>
+            <td class="value-name">Reliability</td>
+            <td>We deliver on time with consistent excellence.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bintu's Grace</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    navToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

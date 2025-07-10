@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Read and submit feedback about Bintu's Grace cakes and fascinators." />
+  <title>Feedback - Bintu's Grace</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    /* Inline style for iframe responsiveness */
+    .embed-container {
+      max-width: 900px;
+      margin: 30px auto;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(90, 46, 131, 0.15);
+    }
+    #google-form-container {
+      display: none;
+      margin-top: 20px;
+    }
+    .toggle-btn {
+      background-color: #ff6f61;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 20px auto;
+      display: block;
+      max-width: 300px;
+      transition: background-color 0.3s ease;
+    }
+    .toggle-btn:hover {
+      background-color: #b76e79;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bintu's Grace</h1>
+    <nav>
+      <button id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html" aria-current="page">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="feedback">
+      <h2>Customer Feedback</h2>
+
+      <button id="toggle-form" class="toggle-btn">Show Feedback Form</button>
+
+      <div id="google-form-container" class="embed-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQCEvhMdvxsBRtSdnB7pVcUMnmWAXQ1uHhwXp1BjWioZ4ppA/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <h3>View Feedback Responses</h3>
+      <div class="embed-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCAWeCtP99zgvwoIj8juYI2PasvjJqeMZa-UXBKZCQenbCgzc1KNLlzPTjGw-EZS7MtyEFnA4vEzj2/pubhtml?gid=478332010&single=true"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bintu's Grace</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navUl = document.querySelector('nav ul');
+    navToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+
+    const toggleBtn = document.getElementById('toggle-form');
+    const formContainer = document.getElementById('google-form-container');
+
+    toggleBtn.addEventListener('click', () => {
+      if (formContainer.style.display === 'none' || formContainer.style.display === '') {
+        formContainer.style.display = 'block';
+        toggleBtn.textContent = 'Hide Feedback Form';
+      } else {
+        formContainer.style.display = 'none';
+        toggleBtn.textContent = 'Show Feedback Form';
+      }
+    });
+  </script>
+</body>
+</html>
